@@ -1,3 +1,9 @@
+/*
+** TODO: файл нужно назвать 'index.css'
+ */
+/*
+** TODO: не используются CSS переменные
+ */
 body{
     font-family: 'Ubuntu', sans-serif;
     color: #212353;
@@ -58,6 +64,9 @@ body{
 
 .intro__title {
     font-size: 5rem;
+    /*
+    ** TODO: px писать не нужно в этой правиле
+     */
     font-weight: 700px;
     width: 645px;
 }
@@ -84,6 +93,9 @@ body{
     background-color: #ffffff;
     color: #9C69E2;
     cursor: pointer;
+    /*
+    ** TODO: лучше писать одной строкой border: 3px solid #9C69E2
+     */
     border: solid 3px;
     border-color: #9C69E2;
     font-weight: 800;
@@ -97,6 +109,9 @@ body{
 }
 
 .about {
+    /*
+    ** TODO: в нулевых значениях пишем '.15'
+     */
     background: rgba(240, 99, 184, 0.15);
     border-radius: 50px;
     justify-content: start;
@@ -137,11 +152,17 @@ body{
     font-size: 18px;
     line-height: 160%;
     text-align: center;
+    /*
+    ** TODO: слишком много жестко заданных значений
+     */
     width: 585px;
     margin-bottom: 70px;
 }
 
 .cards {
+    /*
+    ** TODO: лучше использовать flex-end
+     */
     justify-content: end;
     margin-bottom: 50px;
 }
@@ -221,7 +242,7 @@ body{
     font-weight: bold;
     font-size: 40px;
     line-height: 130%;
-    color: #FFFFFF; 
+    color: #FFFFFF;
     margin-bottom: 95px;
 }
 
@@ -229,6 +250,9 @@ body{
     width: 645px;
     height: 330px;
     background: #FFFFFF;
+    /*
+    ** TODO: px опускаем в нулевых значениях
+     */
     box-shadow: 0px 20px 0px rgb(156 105 226 / 30%);
     border-radius: 20px;
     padding: 70px 60px;
@@ -244,7 +268,7 @@ body{
 .testimonial_name {
     font-weight: 600;
     font-size: 18px;
-    line-height: 160%;    
+    line-height: 160%;
 }
 
 .testimonial_descrittion {
@@ -299,7 +323,7 @@ body{
     font-weight: 500;
     font-size: 16px;
     line-height: 180%;
-    letter-spacing: 0.01em;   
+    letter-spacing: 0.01em;
 }
 
 .adress {
@@ -307,7 +331,7 @@ body{
 }
 
 .footer_contact {
-    width: 335px; 
+    width: 335px;
     margin-top: 50px;
 }
 
@@ -323,7 +347,7 @@ body{
 }
 
 @media screen and (min-width: 1024px) and (max-width: 1440px) {
-    .header, .main_container { 
+    .header, .main_container {
         max-width: 880px;
     }
 
@@ -375,6 +399,10 @@ body{
         width: 201px;
         height: 280px;
         box-sizing: content-box;
+        /*
+        ** TODO: нужно писать в одну строку такие значения
+        ** padding: 0 15px 25px 161px
+         */
         padding-top: 0px;
         padding-bottom: 25px;
         padding-left: 161px;
@@ -394,7 +422,7 @@ body{
 
 
 @media screen and (min-width: 768px) and (max-width: 1023px) {
-    .header, .main_container { 
+    .header, .main_container {
         max-width: 750px;
     }
 
@@ -469,6 +497,9 @@ body{
         width: 610px;
         height: 493px;
         left: 85%;
+        /*
+        ** TODO: это правило здесь не нужно
+         */
         position: sticky;
     }
 
@@ -767,7 +798,7 @@ body{
     .about, .cards, .card, .slider_item {
         display: block;
     }
-    
+
     .about {
         margin-bottom: 32px;
         padding-bottom: 23px;
